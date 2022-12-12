@@ -43,7 +43,7 @@
                         Descarga un PDF con Session.
                     </p>
                     <p>
-                        <asp:Button ID="BtnPDFSession" runat="server" Text="Descargar pdf" CssClass="btn btn-default" OnClick="BtnPDFSession_Click" />
+                        <asp:Button ID="BtnPDFSession" runat="server" Text="Descargar pdf" CssClass="btn btn-default" OnClick="BtnPDFSession_Click" OnClientClick="target ='_blank';" />
                     </p>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                         Muestra una imagen utilizando Session..
                     </p>
                     <p>
-                        <asp:Button ID="BtnImagenSession" runat="server" Text="Descargar imagen" CssClass="btn btn-default" OnClick="BtnImagenSession_Click" />
+                        <asp:Button ID="BtnImagenSession" runat="server" Text="Descargar imagen" CssClass="btn btn-default" OnClick="BtnImagenSession_Click" OnClientClick="target ='_blank';" />
                     </p>
                 </div>
             </div>
@@ -87,11 +87,13 @@
             <p>This method sends the file to the client without loading it to the Application memory on the server. It is the ideal way to use it if the file size being download is large.</p>
             <h3>Descargando con HyperLink</h3>
             <p>Para poder abrir el enlace en otra pestaña es necesario crear un link con un target = “_blank” para ello se crea una página que recibe el nombre del fichero o un GUID que se genere al vuelo y sea esta página la que muestre el archivo.</p>
+            <h3>Descargando con Session</h3>
+            <p>Para poder abrir el enlace en otra página desde un asp:button añadir OnClientClick="target ='_blank';" esto permite ejecutar el código del servidor y la respuesta abrirla en otra pestaña.</p>
             <h3>Enlaces</h3>
-            <p>
-                <a href="https://stackoverflow.com/questions/2110660/c-sharp-response-writefile-vs-response-transmitfile-filesize-issues">C# Response.WriteFile vs Response.TransmitFile filesize issues</a>
-            </p>
+            <ul>
+                <li><a href="https://stackoverflow.com/questions/2110660/c-sharp-response-writefile-vs-response-transmitfile-filesize-issues">C# Response.WriteFile vs Response.TransmitFile filesize issues</a></li>
+                <li><a href="https://stackoverflow.com/questions/34510275/how-to-open-page-in-new-tab-using-the-response-redirect-at-asp-net">How to open page in new tab using the response. redirect at asp.net</a></li>
+            </ul>
         </div>
     </div>
-
 </asp:Content>

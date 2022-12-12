@@ -1,9 +1,14 @@
 ﻿using POCFicherosStream.Helpers;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Web;
+using System.Web.Optimization;
+using System.Web.Script.Serialization;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -80,18 +85,14 @@ namespace POCFicherosStream
         {
             Session["Fichero"] = System.Configuration.ConfigurationManager.AppSettings["NombreFicheroPDF"];
 
-            Response.Write("<script>");
-            Response.Write("window.open('DescargarFichero.aspx','_blank')");
-            Response.Write("</script>");
+            Response.Redirect("DescargarFichero.aspx");
         }
 
         protected void BtnImagenSession_Click(object sender, EventArgs e)
         {
             Session["Fichero"] = System.Configuration.ConfigurationManager.AppSettings["NombreFicheroImagen"];
 
-            Response.Write("<script>");
-            Response.Write("window.open('DescargarFichero.aspx','_blank')");
-            Response.Write("</script>");
+            Response.Redirect("DescargarFichero.aspx");
         }
     }
 }
