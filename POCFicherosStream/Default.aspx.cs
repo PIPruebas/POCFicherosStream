@@ -75,5 +75,23 @@ namespace POCFicherosStream
                 MostrarError($"No existe el fichero {rutaFichero}");
             }
         }
+
+        protected void BtnPDFSession_Click(object sender, EventArgs e)
+        {
+            Session["Fichero"] = System.Configuration.ConfigurationManager.AppSettings["NombreFicheroPDF"];
+
+            Response.Write("<script>");
+            Response.Write("window.open('DescargarFichero.aspx','_blank')");
+            Response.Write("</script>");
+        }
+
+        protected void BtnImagenSession_Click(object sender, EventArgs e)
+        {
+            Session["Fichero"] = System.Configuration.ConfigurationManager.AppSettings["NombreFicheroImagen"];
+
+            Response.Write("<script>");
+            Response.Write("window.open('DescargarFichero.aspx','_blank')");
+            Response.Write("</script>");
+        }
     }
 }

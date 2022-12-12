@@ -15,10 +15,21 @@ namespace POCFicherosStream
         {
             try
             {
-                if (Request.QueryString["fichero"] != null)
+                if(IsPostBack == false)
                 {
-                    string fichero = Request.QueryString["fichero"];
+                    string fichero = string.Empty;
                     string rutaFicheros = System.Configuration.ConfigurationManager.AppSettings["RutaFicheros"];
+
+                    // La opción de QueryString se ha dejado para saber que se puede utilizar pero se recomienda
+                    // Session para que no se puede descargar cualquier fichero conociendo el nombre
+                    if (Request.QueryString["fichero"] != null)
+                    {
+                        fichero = Request.QueryString["fichero"];
+                    }
+                    else if (Session["Fichero"] != null)
+                    {
+                        fichero = Session["Fichero"].ToString();
+                    }
 
                     if (string.IsNullOrEmpty(fichero) == false && string.IsNullOrEmpty(rutaFicheros) == false)
                     {

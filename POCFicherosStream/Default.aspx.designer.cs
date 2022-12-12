@@ -51,6 +51,15 @@ namespace POCFicherosStream
         protected global::System.Web.UI.WebControls.HyperLink HLAbrirFichero;
 
         /// <summary>
+        /// Control BtnPDFSession.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnPDFSession;
+
+        /// <summary>
         /// Control BtnDescargarImagen.
         /// </summary>
         /// <remarks>
@@ -67,5 +76,14 @@ namespace POCFicherosStream
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HLAbrirImagen;
+
+        /// <summary>
+        /// Control BtnImagenSession.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnImagenSession;
     }
 }

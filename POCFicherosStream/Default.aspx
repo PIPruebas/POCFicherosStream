@@ -37,6 +37,15 @@
                         <asp:HyperLink ID="HLAbrirFichero" runat="server" CssClass="btn btn-default" Text="Descargar pdf" Target="_blank" />
                     </p>
                 </div>
+                <div class="col-md-12">
+                    <h2>PDF con Session</h2>
+                    <p>
+                        Descarga un PDF con Session.
+                    </p>
+                    <p>
+                        <asp:Button ID="BtnPDFSession" runat="server" Text="Descargar pdf" CssClass="btn btn-default" OnClick="BtnPDFSession_Click" />
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col-md-4">
@@ -57,6 +66,15 @@
                     </p>
                     <p>
                         <asp:HyperLink ID="HLAbrirImagen" runat="server" CssClass="btn btn-default" Text="Descargar imagen" Target="_blank" />
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h2>Imagen con Session</h2>
+                    <p>
+                        Muestra una imagen utilizando Session..
+                    </p>
+                    <p>
+                        <asp:Button ID="BtnImagenSession" runat="server" Text="Descargar imagen" CssClass="btn btn-default" OnClick="BtnImagenSession_Click" />
                     </p>
                 </div>
             </div>
