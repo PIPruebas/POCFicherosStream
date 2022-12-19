@@ -46,6 +46,15 @@
                         <asp:Button ID="BtnPDFSession" runat="server" Text="Descargar pdf" CssClass="btn btn-default" OnClick="BtnPDFSession_Click" OnClientClick="target ='_blank';" />
                     </p>
                 </div>
+                <div class="col-md-12">
+                    <h2>LinkButton con Session</h2>
+                    <p>
+                        Descarga un PDF con Session.
+                    </p>
+                    <p>
+                        <asp:LinkButton ID="LnkPDFSession" runat="server" Text="Descargar pdf" CssClass="btn btn-default" OnClick="LnkPDFSession_Click" OnClientClick="window.document.forms[0].target='_blank';" />
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col-md-4">

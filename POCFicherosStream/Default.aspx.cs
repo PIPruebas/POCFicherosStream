@@ -94,5 +94,12 @@ namespace POCFicherosStream
 
             Response.Redirect("DescargarFichero.aspx");
         }
+
+        protected void LnkPDFSession_Click(object sender, EventArgs e)
+        {
+            Session["Fichero"] = System.Configuration.ConfigurationManager.AppSettings["NombreFicheroPDF"];
+
+            Response.Redirect("DescargarFichero.aspx");
+        }
     }
 }

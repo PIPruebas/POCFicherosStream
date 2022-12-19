@@ -60,6 +60,15 @@ namespace POCFicherosStream
         protected global::System.Web.UI.WebControls.Button BtnPDFSession;
 
         /// <summary>
+        /// Control LnkPDFSession.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LnkPDFSession;
+
+        /// <summary>
         /// Control BtnDescargarImagen.
         /// </summary>
         /// <remarks>
